@@ -1,5 +1,5 @@
 {% set name = "cnmaps" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Clarmy/cnmaps/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 267ac4ab75b3eb4cbc87d5aa7227c32aa6f7e1eec7ac8b7fccf9cc11729552ec
+  sha256: a399b4b2dcea0eb3d0af4eaa4cf2d1a5b3d114d8e3d3889f2425b6733185cacc
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.6
     - matplotlib-base
-    - Cartopy >=0.19.0
+    - Cartopy >=0.20.0
     - Shapely
     - numpy
     - netCDF4
