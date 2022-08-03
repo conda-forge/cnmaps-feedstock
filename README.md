@@ -3,7 +3,7 @@ About cnmaps
 
 Home: https://github.com/Clarmy/cnmaps
 
-Package license: MIT
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cnmaps-feedstock/blob/main/LICENSE.txt)
 
