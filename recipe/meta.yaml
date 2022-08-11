@@ -28,7 +28,6 @@ requirements:
     - geopandas
     - Fiona
     - geojson
-    - numba >=0.56.0
     - orjson
 
 test:
