@@ -29,6 +29,7 @@ requirements:
     - Fiona
     - geojson
     - orjson
+    - numba
 
 test:
   imports:
