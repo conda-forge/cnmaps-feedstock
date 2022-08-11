@@ -1,5 +1,5 @@
 {% set name = "cnmaps" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Clarmy/cnmaps/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 7f160b6970be024e18f74f331d6b35d191ada478126739843669b68a77c6d584
+  sha256: 33233e20ead81fd2f3f86dbc6b4efa26d6cf131c9eb451da2014ec88ab4cb2f6
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -28,6 +28,8 @@ requirements:
     - geopandas
     - Fiona
     - geojson
+    - numba
+    - orjson
 
 test:
   imports:
