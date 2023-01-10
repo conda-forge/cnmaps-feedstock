@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
     - matplotlib-base
     - Cartopy >=0.20.0
-    - Shapely
+    - Shapely >=1.8.0,<2.0
     - numpy
     - netCDF4
     - geopandas
