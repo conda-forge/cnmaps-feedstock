@@ -1,5 +1,5 @@
 {% set name = "cnmaps" %}
-{% set version = "1.1.2" %}
+{% set version = "1.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/Clarmy/cnmaps/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 209f9de72dfb6111684a7ecff572d89b4d3f88fb57fae5d555a59f3e7378c1a6
+  sha256: 38ddfaa93cc6d8dc4f720ac3be34ed169c87edd7fd3bd4a3b5d666fe6a6c40b1
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 0
   noarch: python
 
 requirements:
@@ -32,6 +32,7 @@ requirements:
     - orjson >=3.7.11
     - numba >=0.56.0
     - poppler >=22.12.0
+    - scipy >= 1.8
 
 test:
   imports:
