@@ -1,5 +1,5 @@
 {% set name = "cnmaps" %}
-{% set version = "1.1.7" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Clarmy/cnmaps/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 88d641c29f1e573082cdac1528181411a0a856696dae65ce1e422f60cd64bdcd
+  sha256: d28de2c70bb48b4805360b0c3dc343f311c24d8d715a881e015cc3b2b46a2fc3
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
